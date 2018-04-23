@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\taskpage.o
+./release\board.o
+./release\task.o
+./release\taskwidget.o
+./release\jsoncpp.o
+./release\new_task.o
+./release\help.o
+./release\qrc_menu.o
+./release\moc_mainwindow.o
+./release\moc_taskpage.o
+./release\moc_taskwidget.o
+./release\moc_new_task.o
+./release\moc_help.o
+);

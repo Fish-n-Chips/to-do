@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\taskpage.o
+./debug\board.o
+./debug\task.o
+./debug\taskwidget.o
+./debug\jsoncpp.o
+./debug\new_task.o
+./debug\help.o
+./debug\qrc_menu.o
+./debug\moc_mainwindow.o
+./debug\moc_taskpage.o
+./debug\moc_taskwidget.o
+./debug\moc_new_task.o
+./debug\moc_help.o
+);
