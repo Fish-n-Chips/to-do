@@ -24,7 +24,7 @@ private slots:
 private:
     Ui::New_task *ui;
 signals:
-    task_created(QString task_name, QString task_desc);
+    void task_created(QString task_name, QString task_desc);
 };
 
 #endif // NEW_TASK_H

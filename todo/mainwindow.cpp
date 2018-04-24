@@ -21,6 +21,7 @@ MainWindow::~MainWindow()
 void MainWindow::createActions()
 {
     // New action
+    menuBar()->setNativeMenuBar(false);
     QMenu *fileMenu = menuBar()->addMenu(tr("&File"));
     const QIcon newIcon = QIcon::fromTheme("document-new", QIcon(":/images/images/new.png"));
     QAction *newAct = new QAction(newIcon, tr("&New"), this);
@@ -64,20 +65,20 @@ void MainWindow::createActions()
     showAll->setShortcuts(QKeySequence::FindNext);
     showAll->setStatusTip(tr("Show all tasks"));
     showMenu->addAction(showAll);
-    connect(showAll, &QAction::triggered, this, show_all);
+    connect(showAll, &QAction::triggered, this, &MainWindow::show_all);
 
     QAction *showOpen = new QAction(tr("&Open"), this);
     showOpen->setShortcuts(QKeySequence::FindPrevious);
     showOpen->setStatusTip(tr("Show open tasks"));
     showMenu->addAction(showOpen);
-    connect(showOpen, &QAction::triggered, this, show_open);
+    connect(showOpen, &QAction::triggered, this, &MainWindow::show_open);
 
     QMenu *helpMenu = menuBar()->addMenu(tr("&Help"));
     QAction *about = new QAction(tr("&About"), this);
     about->setShortcuts(QKeySequence::HelpContents);
     about->setStatusTip(tr("TO-DO App info"));
     helpMenu->addAction(about);
-    connect(about, &QAction::triggered, this, show_help);
+    connect(about, &QAction::triggered, this, &MainWindow::show_help);
 }
 
 void MainWindow::rename(QString name){

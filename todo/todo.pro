@@ -51,7 +51,8 @@ FORMS += \
     taskpage.ui \
     taskwidget.ui \
     new_task.ui \
-    help.ui
+    help.ui \
+    mainwindow.ui
 
 DISTFILES += \
     images/copy.png \

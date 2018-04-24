@@ -2,7 +2,7 @@
 // Created by Yevhenii Kubiuk on 3/31/2018.
 //
 
-#include "Task.h"
+#include "task.h"
 
 Task::Task(const std::string &name, const std::string &description) : name(name), description(description), status(0) {}
 
